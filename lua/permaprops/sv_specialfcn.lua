@@ -9,7 +9,7 @@
 
 if not PermaProps then PermaProps = {} end
 
-PermaProps.SpecialENTSSpawn = {}
+PermaProps.SpecialENTSSpawn = PermaProps.SpecialENTSSpawn or {}
 PermaProps.SpecialENTSSpawn["gmod_lamp"] = function( ent, data)
 
 	ent:SetFlashlightTexture( data["Texture"] )
@@ -194,7 +194,7 @@ PermaProps.SpecialENTSSpawn["item_ammo_crate"] = function( ent, data )
 end
 
 
-PermaProps.SpecialENTSSave = {}
+PermaProps.SpecialENTSSave = PermaProps.SpecialENTSSave or {}
 PermaProps.SpecialENTSSave["gmod_lamp"] = function( ent )
 
 	local content = {}
